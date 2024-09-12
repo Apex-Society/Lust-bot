@@ -5,8 +5,8 @@ class Config(object):
     OWNER_ID = "5758713974"
     sudo_users = "5758713974" ,"6679467894", "1837623818", "6916220465", "6494814225", "5079126270", "7350197183", "5138772561", "1440712150"
     GROUP_ID = -1002190080867
-    TOKEN = "6656009300:AAGgaIl9uJ438ZVpLP1R5k5_fs3piACUqiU"
-    mongo_url = "mongodb+srv://tiwarireeta004:peqxLEd36RAg7ors@cluster0.furypd3.mongodb.net/?retryWrites=true&w=majority"
+    TOKEN = "7371780430:AAH3wBjiu4nRirz-A5U_L7beK97TmWicQSY"
+    mongo_url = "mongodb+srv://vinamra523:duXNC3pKUddFNb1p@newbhainew.3ioyzuw.mongodb.net/?retryWrites=true&w=majority"
     PHOTO_URL =["https://te.legra.ph/file/161e4748aff1915cf21f0.jpg", "https://te.legra.ph/file/0c0dd1968dfb3963275dd.jpg"]
     SUPPORT_CHAT = "ApeX_Chats"
     UPDATE_CHAT = "ApeX_Chats"
