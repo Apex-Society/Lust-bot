@@ -13,6 +13,7 @@ from shivu import collection, top_global_groups_collection, group_user_totals_co
 from shivu import application, LOGGER, TOKEN 
 from shivu import set_on_data, set_off_data
 from shivu.modules import ALL_MODULES
+
 locks = {}
 message_counters = {}
 spam_counters = {}
@@ -290,13 +291,16 @@ async def guess(update: Update, context: CallbackContext) -> None:
         await update.message.reply_text('𝙋𝙡𝙚𝙖𝙨𝙚 𝙒𝙧𝙞𝙩𝙚 𝘾𝙤𝙧𝙧𝙚𝙘𝙩 𝙉𝙖𝙢𝙚... ❌️')
 def main() -> None:
     """Run bot."""
-    application.add_handler(CommandHandler(["slave"], guess, block=False))
-    application.add_handler(CommandHandler('set_on', set_on, block=False))
-    application.add_handler(CommandHandler('set_off', set_off, block=False))
-    application.add_handler(MessageHandler(filters.ALL, message_counter, block=False))
-    PORT = int(os.environ.get("PORT", "8443"))
-    TOKEN = os.environ.get("TOKEN")
+   
+    
+    application.add_handler(CommandHandler(["slave"], guess))
+    application.add_handler(CommandHandler('set_on', set_on))
+    application.add_handler(CommandHandler('set_off', set_off))
+    application.add_handler(MessageHandler(filters.ALL, message_counter))
+    
+    print("Bot starting...")
+    application.run_polling(allowed_updates=Update.ALL_TYPES)
+
 if __name__ == "__main__":
-    shivuu.start()
-    LOGGER.info("Bot started")
     main()
+    print("Bot started")
