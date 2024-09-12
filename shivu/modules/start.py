@@ -44,10 +44,10 @@ async def start(update: Update, context: CallbackContext) -> None:
         caption = f"""Hey {first_name}✨\n I'm ˹ʟᴜꜱᴛ ✘ ᴄᴀᴛᴄʜᴇʀ˼. I Am Anime Based Game Bot! Want to get help? Do `/help` !\nWant to request/report bugs? Click on the `Support` button!"""
         
         keyboard = [
-            [InlineKeyboardButton(" SUPPORT ", url=f'https://t.me/lustsupport'),
-             InlineKeyboardButton(" ADD ME ", url=f'https://t.me/lustXcatcherrobot?startgroup=new')],
-            [InlineKeyboardButton(" UPDATE ", url=f'https://t.me/Lustxupdate')],
-            [InlineKeyboardButton(" CONTACT ", url=f'https://t.me/WTF_BOOB'),
+            [InlineKeyboardButton(" SUPPORT ", url=f'https://t.me/ApeX_Chats'),
+             InlineKeyboardButton(" ADD ME ", url=f'https://t.me/lustXcatcherr_robot?startgroup=new')],
+            [InlineKeyboardButton(" UPDATE ", url=f'https://t.me/TEAM_APEX_NETWORK')],
+            [InlineKeyboardButton(" CONTACT ", url=f'https://t.me/AKIRA_ISHIKKK'),
              InlineKeyboardButton(" SOURCE ", url=f'https://www.youtube.com/watch?v=l1hPRV0_cwc')]
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -56,7 +56,7 @@ async def start(update: Update, context: CallbackContext) -> None:
     else:
         photo_url = random.choice(PHOTO_URL)
         keyboard = [
-            [InlineKeyboardButton("PM", url=f'https://t.me/lustXcatcherrobot?start=true')],
+            [InlineKeyboardButton("PM", url=f'https://t.me/lustXcatcherr_robot?start=true')],
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         video_url = "https://checker.in/go/10590132"
